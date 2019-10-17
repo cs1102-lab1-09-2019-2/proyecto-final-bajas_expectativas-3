@@ -7,13 +7,13 @@
 Integrantes - (Usuarios Github:):
 --
 
-1.- <b>nombre_completo1</b><br>
-    <i>usuario_github1</i>
+1.- <b>Patiño Chiri, Teodoro Martín1</b><br>
+    <i>Teodoro-Patino</i>
 
-2.- <b>nombre_completo2</b><br>
-    <i>usuario_github2</i>
+2.- <b>Ceron Villar, Edisson Ricardo</b><br>
+    <i>RicardoCeron18</i>
 
-3.- <b>nombre_completo3</b><br>
+3.- <b>Llap Unchón, Alonso Gabriel</b><br>
     <i>usuario_github3</i>
 
 Instrucciones:
