@@ -22,6 +22,5 @@ void impr(vector<vector<caracter>> mapa, entero alto, entero ancho);
 void menu();
 entero maximo(vector<entero> x);
 //void ruta(entero alto, entero ancho, entero num, vector<vector<caracter >> mapa);
-void impr(int mapa[10][10], ent alto, ent ancho);
 
 #endif //PROYECTO_FINAL_BAJAS_EXPECTATIVAS_FINAL_H
