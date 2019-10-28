@@ -12,12 +12,12 @@
 #include <iomanip>
 using namespace std;
 typedef int entero;
-typedef char caraccter;
+typedef char caracter;
 typedef string cadena;
 
 
-void leerdatos(vector<vector<vector<caraccter >>> &mapas);
-void ruta(entero m_elegido,vector<vector<vector<caraccter >>> &mapas);
+void leerdatos(vector<vector<vector<caracter >>> &mapas);
+void ruta(entero m_elegido,vector<vector<vector<caracter >>> &mapas);
 void impr(vector<vector<caracter>> mapa, entero alto, entero ancho);
 void menu();
 entero maximo(vector<entero> x);
