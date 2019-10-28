@@ -156,5 +156,6 @@ void impr(vector<vector<caracter>> mapa, entero alto, entero ancho){
         for (entero j=0;j<ancho; j++){
             cout << " " << mapa[i][j] << " ";
         }cout << "\n";}
+    
     return;
 }
