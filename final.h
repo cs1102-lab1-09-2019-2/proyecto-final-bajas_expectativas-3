@@ -14,7 +14,7 @@ using namespace std;
 typedef int entero;
 typedef char caraccter;
 typedef string cadena;
-typedef size_t indice;
+
 
 void leerdatos(vector<vector<vector<caraccter >>> &mapas);
 void ruta(entero m_elegido,vector<vector<vector<caraccter >>> &mapas);
