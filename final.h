@@ -18,7 +18,7 @@ typedef string cadena;
 
 void leerdatos(vector<vector<vector<caraccter >>> &mapas);
 void ruta(entero m_elegido,vector<vector<vector<caraccter >>> &mapas);
-void impr(vector<vector<caracter>> mapa, entero alto, entero ancho;
+void impr(vector<vector<caracter>> mapa, entero alto, entero ancho);
 void menu();
 entero maximo(vector<entero> x);
 //void ruta(entero alto, entero ancho, entero num, vector<vector<caracter >> mapa);
