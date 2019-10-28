@@ -14,7 +14,7 @@ Integrantes - (Usuarios Github:):
     <i>RicardoCeron18</i>
 
 3.- <b>Llap Unchón, Alonso Gabriel</b><br>
-    <i>usuario_github3</i>
+    <i>A-Llap</i>
 
 Instrucciones:
 --
