@@ -66,3 +66,56 @@ public:
 };
 
 #endif //PROYECTOFINAL_MAPA_H
+void Imprimir_Mapa(){
+        for (nat i = 0; i < map.size() ; ++i) {
+            for (nat j = 0; j < map[i].size(); ++j) {
+                cout<<map[i][j]<<' ';
+            }
+            cout << '\n';
+        }
+    }
+    /*void AStar(){
+
+    }*/
+    void Dkjistra(){
+        auto visitado = map;
+        vector<vector<nat>> grid(10,vector<nat> (10,0));
+        vector<vector<char>> camino(10,vector<char> (10,'.'));
+        for (nat i = 0; i < map.size() ; ++i) {
+            for (nat j = 0; j < map[i].size(); ++j) {
+                if (map[i][j] == true) camino[i][j] = '#';
+            }
+        }
+
+
+        vector<pair<int,int>> vecinos = {{0,1},{1,0},{0,-1},{-1,0}};
+        vector<pair<nat,nat>> cola;
+        pair<nat,nat> actual = inicio;
+        int npasos = 1;
+        cola.emplace_back(inicio);
+        while(!cola.empty()){
+            vector<pair<nat,nat>> cola2;
+            for(auto & item: cola){
+                try {
+                    actual={item.first,item.second};
+                    if(grid.at(actual.second).at(actual.first)==0)
+                        grid[actual.second][actual.first] = npasos;
+                    if (final == actual)
+                        goto construir;
+
+                    for (auto vecino : vecinos) {
+                        try {
+                            pair<nat, nat> spotVecino = {actual.first + vecino.first, actual.second + vecino.second};
+                            if (!visitado.at(spotVecino.second).at(spotVecino.first)) {
+                                visitado[spotVecino.second][spotVecino.first] = true;
+                                cola2.emplace_back(spotVecino);
+                            } else continue;
+                        } catch (exception &) {continue;}
+                    }
+                } catch (exception&){continue;}
+            }
+            npasos++;
+            cola = cola2;
+        }
+        return;
+        construir:
