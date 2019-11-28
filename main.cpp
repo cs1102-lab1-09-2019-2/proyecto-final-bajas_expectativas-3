@@ -1,30 +1,31 @@
-#include "final.h"
-int main() {
-    entero alto=10;
-    entero ancho=10;
-    vector<vector<vector<caraccter >>> mapas;
-    entero m_eleg;
-    menu();
-    cin>>m_eleg;
-    if(m_eleg==3){
-        return 0;
-    }
-    if(m_eleg==1) {
-        leerdatos(mapas);
-        cout<<"Selecione el mapa";
-        cin>>m-e;
-        ruta(m_eleg,mapas);
-    }
-//ent num = 2;
-//do {
-//  ruta(10, 10, num, mapa);
-//  impr(mapa, 10, 10);
-//  num++;
-//} while (num<8);
-    /*ruta(10, 10, 2, mapa);
-    ruta(10, 10, 3, mapa);
-    ruta(10, 10, 4, mapa);
-    impr(mapa, 10, 10);
-*/
+#include "Mapa.h"
+int main(){
+    cout << " ___  ___  ___  _   _  ___  _   _    _  ___   ___  __   "<<"\n";
+    cout <<"|       ||   _   ||       ||  | |  ||       ||   | |  |  | ||      | |       ||    _ |  "<<"\n";
+    cout << "|    _  ||  ||  ||     ||  ||  ||    _||   | |   || ||  _    ||    __||   | ||  "<<"\n";
+    cout << "|   || ||       |  |   |  |       ||   |_ |   | |       || | |   ||   |_ |   |||_ "<<"\n";
+    cout <<"|    _||       |  |   |  |       ||    _||   | |  _    || ||   ||    _||    _  |" <<"\n";
+    cout << "|   |    |   _   |  |   |  |   _   ||   |    |   | | | |   ||       ||   |_ |   |  | |" <<"\n";
+    cout << "|_|    |_| ||  |_|  || |||_|    |_| ||  |_||__| |__||_|  |_|"<<"\n";
+    cout <<setfill(' ')<<setw(89) << "" <<"\n";
+    cout << "\n";
 
-    return 0;}
+    cout << setfill('-') << setw(46) <<"MENU";
+    cout << setfill('-') << setw(43)<<"-";
+    cout << "\n";
+
+    entero elegido;
+    cout << "1 - Seleccionar el mapa.";
+    cout << "\n";
+    cout << "3 - Salir.";
+    cout<<'\n';
+    cin>>elegido;
+
+    if(elegido==3)
+        return 0;
+    Mapa mapa1(elegido);
+    mapa1.Imprimir_Mapa();
+    mapa1.Dkjistra();
+
+    return 0;
+}
