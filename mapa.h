@@ -10,6 +10,7 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include<iomanip>
 using namespace std;
 using nat = size_t;
 using cadena=string;
