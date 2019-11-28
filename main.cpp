@@ -23,7 +23,7 @@ int main(){
         cout << "3 - Salir.";
         cout<<'\n';
         cin>>elegido;
-        if (elegido == 3)
+        if (elegido == 6)
             break;
         if(elegido>=1 && elegido<=5) {
             Mapa mapa1(elegido);
