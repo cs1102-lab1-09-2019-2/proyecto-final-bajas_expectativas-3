@@ -20,7 +20,7 @@ int main(){
         entero elegido;
         cout << "1 - Seleccionar el mapa.";
         cout << "\n";
-        cout << "3 - Salir.";
+        cout << "6 - Salir.";
         cout<<'\n';
         cin>>elegido;
         if (elegido == 6)
